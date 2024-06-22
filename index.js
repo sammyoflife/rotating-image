@@ -6,7 +6,7 @@ let x = 0;
 let timer;
 
 function updateGallery() {
-    imagecontainerE1.style.transform = perspective(1000px) rotateY(${x}deg);
+    imagecontainerE1.style.transform = `perspective(1000px) rotateY(${x}deg)`;
     timer = setTimeout(() => {
         x = x + 45;
         updateGallery();
